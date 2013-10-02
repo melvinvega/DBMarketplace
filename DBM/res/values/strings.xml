@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DBM</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_log_in_information">LogInInformation</string>
+    <string name="title_activity_user_information">UserInformation</string>
+    <string name="title_activity_edit_user_information">EditUserInformation</string>
+    <string name="title_activity_books_sub_category">BooksSubCategory</string>
+    <string name="title_activity_electronics_sub_category">ElectronicsSubCategory</string>
+    <string name="title_activity_cumputers_sub_category">CumputersSubCategory</string>
+    <string name="title_activity_clothing_sub_category">ClothingSubCategory</string>
+    <string name="title_activity_shoes_sub_category">ShoesSubCategory</string>
+    <string name="title_activity_sports_sub_category">SportsSubCategory</string>
+    <string name="title_activity_item_list">ItemList</string>
+
+</resources>
