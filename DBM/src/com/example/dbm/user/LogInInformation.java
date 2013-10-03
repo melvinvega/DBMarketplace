@@ -22,6 +22,7 @@ public class LogInInformation extends Activity {
 		
 		LogInButton = (Button) findViewById(R.id.logConfirm);
 		
+		
 		View.OnClickListener handler = new View.OnClickListener() {
 			public void onClick(View v){
 				intent = new Intent(LogInInformation.this,AfterLogIn.class);
