@@ -2,8 +2,7 @@ package com.example.dbm.main;
 
 import com.example.dbm.R;
 import com.example.dbm.user.LogInInformation;
-import com.example.dbmarketplace.Log_In_Information;
-import com.example.dbmarketplace.MainActivity;
+
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -31,39 +30,38 @@ public class MainActivity extends Activity {
 		
 		View.OnClickListener handler1 = new View.OnClickListener() {
 			public void onClick(View v){
-				intent = new Intent(MainActivity.this,.class);
+				intent = new Intent(MainActivity.this,LogInInformation.class);
 				startActivity(intent);
 			}
 		};
 		
 		View.OnClickListener handler2 = new View.OnClickListener() {
 			public void onClick(View v){
-				intent = new Intent(LogInInformation.this,LogInInformation.class);
+				intent = new Intent(MainActivity.this,Categories.class);
 				startActivity(intent);
 			}
 		};
 		
-		View.OnClickListener handler1 = new View.OnClickListener() {
+		View.OnClickListener handler3 = new View.OnClickListener() {
 			public void onClick(View v){
-				intent = new Intent(MainActivity.this,Log_In_Information.class);
+				intent = new Intent(MainActivity.this,Categories.class);
 				startActivity(intent);
 			}
 		};
 		
-		View.OnClickListener handler1 = new View.OnClickListener() {
+		View.OnClickListener handler4 = new View.OnClickListener() {
 			public void onClick(View v){
-				intent = new Intent(MainActivity.this,Log_In_Information.class);
+				intent = new Intent(MainActivity.this,AfterLogIn.class);
 				startActivity(intent);
 			}
 		};
 		
 		
 		
-		startButton1.setOnClickListener(handler1);
-		startButton1.setOnClickListener(handler1);
-		startButton1.setOnClickListener(handler1);
-		startButton1.setOnClickListener(handler1);
-		startButton1.setOnClickListener(handler1);
+		LogInButton.setOnClickListener(handler1);
+		buyButton.setOnClickListener(handler2);
+		sellButton.setOnClickListener(handler3);
+		CreateAccountButton.setOnClickListener(handler4);
 		
 		
 
