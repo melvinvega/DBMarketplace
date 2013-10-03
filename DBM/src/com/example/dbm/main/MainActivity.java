@@ -28,9 +28,7 @@ public class MainActivity extends Activity {
 		CreateAccountButton  = (Button) findViewById(R.id.CreateAccountButton);
 		buyButton			 = (ImageButton) findViewById(R.id.BuyButton);
 		sellButton			 = (ImageButton) findViewById(R.id.SellButton);
-		userButton 		     = (ImageButton) findViewById(R.id.UserIconButton);
 		
-	
 		View.OnClickListener handler1 = new View.OnClickListener() {
 			public void onClick(View v){
 				intent = new Intent(MainActivity.this,.class);
@@ -59,12 +57,7 @@ public class MainActivity extends Activity {
 			}
 		};
 		
-		View.OnClickListener handler1 = new View.OnClickListener() {
-			public void onClick(View v){
-				intent = new Intent(MainActivity.this,Log_In_Information.class);
-				startActivity(intent);
-			}
-		};
+		
 		
 		startButton1.setOnClickListener(handler1);
 		startButton1.setOnClickListener(handler1);

@@ -9,38 +9,38 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/log"
+        android:id="@+id/LogInButton"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/createButton"
+        android:layout_above="@+id/CreateAccountButton"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="14dp"
         android:text="Log in" />
 
     <Button
-        android:id="@+id/createButton"
+        android:id="@+id/CreateAccountButton"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/log"
+        android:layout_alignLeft="@+id/LogInButton"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="19dp"
         android:text="Create Account" />
 
     <ImageButton
-        android:id="@+id/buy"
+        android:id="@+id/BuyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/log"
-        android:layout_alignLeft="@+id/log"
+        android:layout_above="@+id/LogInButton"
+        android:layout_alignLeft="@+id/LogInButton"
         android:layout_marginBottom="77dp"
         android:src="@drawable/buy_icon" />
 
     <ImageButton
-        android:id="@+id/sell"
+        android:id="@+id/SellButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/log"
-        android:layout_alignTop="@+id/buy"
+        android:layout_alignRight="@+id/LogInButton"
+        android:layout_alignTop="@+id/BuyButton"
         android:src="@drawable/sell_icon" />
 
     <ImageView
