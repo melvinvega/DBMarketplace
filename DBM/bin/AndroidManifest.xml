@@ -66,6 +66,10 @@
             android:name="com.example.dbm.ItemList"
             android:label="@string/title_activity_item_list" >
         </activity>
+        <activity
+            android:name="com.example.dbm.main.AfterLogIn"
+            android:label="@string/title_activity_after_log_in" >
+        </activity>
     </application>
 
 </manifest>

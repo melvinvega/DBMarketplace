@@ -15,5 +15,6 @@
     <string name="title_activity_shoes_sub_category">ShoesSubCategory</string>
     <string name="title_activity_sports_sub_category">SportsSubCategory</string>
     <string name="title_activity_item_list">ItemList</string>
+    <string name="title_activity_after_log_in">AfterLogIn</string>
 
 </resources>

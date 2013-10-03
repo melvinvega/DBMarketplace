@@ -2,6 +2,8 @@ package com.example.dbm.main;
 
 import com.example.dbm.R;
 import com.example.dbm.user.LogInInformation;
+import com.example.dbmarketplace.Log_In_Information;
+import com.example.dbmarketplace.MainActivity;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -14,7 +16,7 @@ import android.widget.ImageButton;
 public class MainActivity extends Activity {
 
 	Button LogInButton,CreateAccountButton, BackButton;
-
+	Intent intent;
 	ImageButton buyButton,sellButton,userButton;
 
 	@Override
@@ -24,68 +26,51 @@ public class MainActivity extends Activity {
 
 		LogInButton 		 = (Button) findViewById(R.id.LogInButton);
 		CreateAccountButton  = (Button) findViewById(R.id.CreateAccountButton);
-		BackButton			 = (Button)findViewById(R.id.LogInButton);
-		
 		buyButton			 = (ImageButton) findViewById(R.id.BuyButton);
 		sellButton			 = (ImageButton) findViewById(R.id.SellButton);
 		userButton 		     = (ImageButton) findViewById(R.id.UserIconButton);
 		
 	
-	
-
-		LogInButton.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				Intent l = new Intent(getApplicationContext(), LogInInformation.class);
-				startActivity(l);
-				
+		View.OnClickListener handler1 = new View.OnClickListener() {
+			public void onClick(View v){
+				intent = new Intent(MainActivity.this,.class);
+				startActivity(intent);
 			}
-		});
-
-		CreateAccountButton.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-
-			}
-		});
+		};
 		
-		BackButton.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				//setContentView(R.layout.activity_main);
+		View.OnClickListener handler2 = new View.OnClickListener() {
+			public void onClick(View v){
+				intent = new Intent(LogInInformation.this,LogInInformation.class);
+				startActivity(intent);
 			}
-		});
+		};
 		
-
-		buyButton.setOnClickListener(new View.OnClickListener() {
-
-			public void onClick(View v) {
-				Intent i = new Intent(getApplicationContext(), Categories.class);
-				startActivity(i);
+		View.OnClickListener handler1 = new View.OnClickListener() {
+			public void onClick(View v){
+				intent = new Intent(MainActivity.this,Log_In_Information.class);
+				startActivity(intent);
 			}
-		});
-
-		sellButton.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				Intent i = new Intent(getApplicationContext(), Categories.class);
-				startActivity(i);
+		};
+		
+		View.OnClickListener handler1 = new View.OnClickListener() {
+			public void onClick(View v){
+				intent = new Intent(MainActivity.this,Log_In_Information.class);
+				startActivity(intent);
 			}
-		});
-
-		userButton.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-
+		};
+		
+		View.OnClickListener handler1 = new View.OnClickListener() {
+			public void onClick(View v){
+				intent = new Intent(MainActivity.this,Log_In_Information.class);
+				startActivity(intent);
 			}
-		});
+		};
+		
+		startButton1.setOnClickListener(handler1);
+		startButton1.setOnClickListener(handler1);
+		startButton1.setOnClickListener(handler1);
+		startButton1.setOnClickListener(handler1);
+		startButton1.setOnClickListener(handler1);
 		
 		
 
