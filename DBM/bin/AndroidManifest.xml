@@ -70,6 +70,10 @@
             android:name="com.example.dbm.main.AfterLogIn"
             android:label="@string/title_activity_after_log_in" >
         </activity>
+        <activity
+            android:name="com.example.dbm.user.CreateAccount"
+            android:label="@string/title_activity_create_account" >
+        </activity>
     </application>
 
 </manifest>

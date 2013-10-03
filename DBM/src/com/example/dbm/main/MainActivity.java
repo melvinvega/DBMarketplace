@@ -1,6 +1,7 @@
 package com.example.dbm.main;
 
 import com.example.dbm.R;
+import com.example.dbm.user.CreateAccount;
 import com.example.dbm.user.LogInInformation;
 
 
@@ -32,6 +33,7 @@ public class MainActivity extends Activity {
 			public void onClick(View v){
 				intent = new Intent(MainActivity.this,LogInInformation.class);
 				startActivity(intent);
+				
 			}
 		};
 		
@@ -51,7 +53,7 @@ public class MainActivity extends Activity {
 		
 		View.OnClickListener handler4 = new View.OnClickListener() {
 			public void onClick(View v){
-				intent = new Intent(MainActivity.this,AfterLogIn.class);
+				intent = new Intent(MainActivity.this,CreateAccount.class);
 				startActivity(intent);
 			}
 		};
