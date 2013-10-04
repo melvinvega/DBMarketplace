@@ -9,40 +9,55 @@
     tools:context=".AfterLogIn" >
 
     <ImageButton
-        android:id="@+id/imageButton1"
+        android:id="@+id/buy2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="106dp"
-        android:layout_marginTop="63dp"
-        android:src="@drawable/user_icon" />
+        android:layout_alignTop="@+id/sell2"
+        android:src="@drawable/buy_icon" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/sell2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/imageButton1"
         android:src="@drawable/sell_icon" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/imageButton3"
-        android:layout_marginLeft="38dp"
-        android:src="@drawable/buy_icon" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/user_icon" />
+
+    <ImageButton
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sell2"
+        android:layout_alignLeft="@+id/profile"
+        android:src="@drawable/cart" />
 
     <Button
-        android:id="@+id/confirm"
+        android:id="@+id/logout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageButton2"
+        android:layout_alignLeft="@+id/buy2"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/imageButton3"
-        android:layout_marginBottom="64dp"
+        android:layout_alignRight="@+id/sell2"
+        android:layout_marginBottom="21dp"
         android:text="Log Out" />
+
+    <ImageButton
+        android:id="@+id/bids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cart"
+        android:layout_below="@+id/sell2"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/bids" />
 
 </RelativeLayout>

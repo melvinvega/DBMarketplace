@@ -4,7 +4,7 @@
     android:layout_height="match_parent" >
 
     <ImageButton
-        android:id="@+id/iElectronicsButton"
+        android:id="@+id/electronic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/SearchBar"
@@ -12,11 +12,11 @@
         android:src="@drawable/electronics_icon" />
 
     <ImageButton
-        android:id="@+id/ClothingButton"
+        android:id="@+id/clothe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/iElectronicsButton"
-        android:layout_alignTop="@+id/CopmutersButton"
+        android:layout_alignLeft="@+id/electronic"
+        android:layout_alignTop="@+id/computer"
         android:src="@drawable/clothing_icon" />
 
     <ImageButton
@@ -39,7 +39,7 @@
         android:text="Search" />
 
     <ImageButton
-        android:id="@+id/CopmutersButton"
+        android:id="@+id/computer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/Books"
@@ -48,19 +48,19 @@
         android:src="@drawable/computers_icon" />
 
     <ImageButton
-        android:id="@+id/ShoesButton"
+        android:id="@+id/shoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/CopmutersButton"
-        android:layout_below="@+id/CopmutersButton"
+        android:layout_alignLeft="@+id/computer"
+        android:layout_below="@+id/computer"
         android:layout_marginTop="57dp"
         android:src="@drawable/shoes_icon" />
 
     <ImageButton
-        android:id="@+id/SportsButton"
+        android:id="@+id/sport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ShoesButton"
+        android:layout_alignTop="@+id/shoes"
         android:layout_toRightOf="@+id/BackButton"
         android:src="@drawable/sports_icon" />
 

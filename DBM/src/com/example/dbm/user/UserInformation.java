@@ -20,7 +20,7 @@ public class UserInformation extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_user_information);
 		
-		Confirm = (Button) findViewById(R.id.confirm);
+		Confirm = (Button) findViewById(R.id.logout2);
 		Edit = (Button) findViewById(R.id.edit);
 
 

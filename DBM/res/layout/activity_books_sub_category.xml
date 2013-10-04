@@ -19,38 +19,47 @@
         android:text="AutoCompleteTextView" />
 
     <Button
-        android:id="@+id/Technology"
+        android:id="@+id/children"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="52dp"
-        android:text="Technology" />
-
-    <Button
-        android:id="@+id/Children"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Technology"
-        android:layout_alignLeft="@+id/Fiction"
+        android:layout_above="@+id/technology"
+        android:layout_alignLeft="@+id/fiction"
         android:layout_marginBottom="51dp"
         android:text="Children" />
 
     <Button
-        android:id="@+id/Fiction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Children"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp"
-        android:text="Fiction" />
-
-    <Button
-        android:id="@+id/Adult"
+        android:id="@+id/adult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/autoCompleteTextView1"
         android:layout_centerHorizontal="true"
         android:text="Adult" />
+
+    <Button
+        android:id="@+id/backbooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/technology"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/technology"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/technology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backbooks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:text="Technology" />
+
+    <Button
+        android:id="@+id/fiction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/children"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Fiction" />
 
 </RelativeLayout>
