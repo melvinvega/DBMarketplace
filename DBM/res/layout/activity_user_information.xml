@@ -66,7 +66,7 @@
         android:text="00680" />
 
     <Button
-        android:id="@+id/createAccount"
+        android:id="@+id/confirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textView5"
@@ -75,10 +75,10 @@
         android:text="Confirm" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/createAccount"
+        android:layout_alignBottom="@+id/confirm"
         android:layout_alignRight="@+id/textView6"
         android:layout_marginRight="14dp"
         android:text="Edit" />

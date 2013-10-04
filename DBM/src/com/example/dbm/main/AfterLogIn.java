@@ -7,8 +7,11 @@ import com.example.dbm.R.menu;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.Button;
 
 public class AfterLogIn extends Activity {
+	
+	Button Buy2, Sell2, Cart, Bids, LogOut;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

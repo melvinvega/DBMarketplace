@@ -24,7 +24,7 @@ public class CreateAccount extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_create_account);
 
-		create = (Button) findViewById(R.id.createAccount);
+		create = (Button) findViewById(R.id.confirm);
 
 
 		View.OnClickListener handler = new View.OnClickListener() {
