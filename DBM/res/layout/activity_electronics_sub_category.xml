@@ -8,9 +8,64 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ElectronicsSubCategory" >
 
-    <TextView
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/phones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tablets"
+        android:layout_alignRight="@+id/tablets"
+        android:layout_below="@+id/tablets"
+        android:layout_marginTop="24dp"
+        android:text="Phones" />
+
+    <Button
+        android:id="@+id/videogames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phones"
+        android:layout_alignRight="@+id/phones"
+        android:layout_below="@+id/phones"
+        android:layout_marginTop="25dp"
+        android:text="Videogames Consoles" />
+
+    <Button
+        android:id="@+id/mp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoCompleteTextView1"
+        android:layout_alignRight="@+id/autoCompleteTextView1"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_marginTop="16dp"
+        android:text="Mp3 Players" />
+
+    <Button
+        android:id="@+id/tablets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mp3"
+        android:layout_alignRight="@+id/mp3"
+        android:layout_below="@+id/mp3"
+        android:layout_marginTop="22dp"
+        android:text="Tablets" />
+
+    <Button
+        android:id="@+id/backelectronics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/videogames"
+        android:layout_alignRight="@+id/videogames"
+        android:layout_below="@+id/videogames"
+        android:layout_marginTop="22dp"
+        android:text="Back" />
 
 </RelativeLayout>

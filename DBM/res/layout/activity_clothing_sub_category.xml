@@ -9,7 +9,7 @@
     tools:context=".ClothingSubCategory" >
 
     <Button
-        android:id="@+id/children"
+        android:id="@+id/childrenclothe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/women"
@@ -32,9 +32,9 @@
         android:id="@+id/backclothe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/children"
+        android:layout_alignLeft="@+id/childrenclothe"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/children"
+        android:layout_alignRight="@+id/childrenclothe"
         android:layout_marginBottom="46dp"
         android:text="Back" />
 

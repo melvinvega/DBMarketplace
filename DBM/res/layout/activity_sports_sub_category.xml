@@ -8,9 +8,67 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SportsSubCategory" >
 
-    <TextView
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:text="Search" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/soccer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/baseball"
+        android:layout_alignRight="@+id/basketball"
+        android:layout_below="@+id/basketball"
+        android:layout_marginTop="28dp"
+        android:text="Soccer" />
+
+    <Button
+        android:id="@+id/tennis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/soccer"
+        android:layout_alignRight="@+id/soccer"
+        android:layout_below="@+id/soccer"
+        android:layout_marginTop="22dp"
+        android:text="Tennis" />
+
+    <Button
+        android:id="@+id/baseball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoCompleteTextView1"
+        android:layout_alignRight="@+id/autoCompleteTextView1"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_marginTop="14dp"
+        android:text="Baseball" />
+
+    <Button
+        android:id="@+id/backsports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tennis"
+        android:layout_alignRight="@+id/soccer"
+        android:layout_below="@+id/tennis"
+        android:layout_marginTop="23dp"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/basketball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/baseball"
+        android:layout_alignRight="@+id/baseball"
+        android:layout_below="@+id/baseball"
+        android:layout_marginTop="22dp"
+        android:text="Basketball" />
 
 </RelativeLayout>

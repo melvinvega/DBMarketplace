@@ -8,9 +8,57 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ShoesSubCategory" >
 
-    <TextView
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:text="Search" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <Button
+        android:id="@+id/childrenshoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/womenshoes"
+        android:layout_alignRight="@+id/womenshoes"
+        android:layout_below="@+id/womenshoes"
+        android:layout_marginTop="34dp"
+        android:text="Children" />
+
+    <Button
+        android:id="@+id/backshoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/childrenshoes"
+        android:layout_alignRight="@+id/childrenshoes"
+        android:layout_below="@+id/childrenshoes"
+        android:layout_marginTop="36dp"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/menshoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoCompleteTextView1"
+        android:layout_alignRight="@+id/autoCompleteTextView1"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_marginTop="32dp"
+        android:text="Men" />
+
+    <Button
+        android:id="@+id/womenshoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/menshoes"
+        android:layout_alignRight="@+id/menshoes"
+        android:layout_below="@+id/menshoes"
+        android:layout_marginTop="20dp"
+        android:text="Women" />
 
 </RelativeLayout>

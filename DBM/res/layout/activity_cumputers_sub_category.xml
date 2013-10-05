@@ -8,9 +8,44 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".CumputersSubCategory" >
 
-    <TextView
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/laptop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desktop"
+        android:layout_alignRight="@+id/desktop"
+        android:layout_below="@+id/desktop"
+        android:layout_marginTop="34dp"
+        android:text="Laptop" />
+
+    <Button
+        android:id="@+id/backcomputers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/laptop"
+        android:layout_alignRight="@+id/laptop"
+        android:layout_below="@+id/laptop"
+        android:layout_marginTop="58dp"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/desktop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoCompleteTextView1"
+        android:layout_alignRight="@+id/autoCompleteTextView1"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_marginTop="50dp"
+        android:text="Desktop" />
 
 </RelativeLayout>

@@ -4,6 +4,7 @@ import com.example.dbm.ItemList;
 import com.example.dbm.R;
 import com.example.dbm.R.layout;
 import com.example.dbm.R.menu;
+import com.example.dbm.main.Categories;
 import com.example.dbm.main.MainActivity;
 import com.example.dbm.user.LogInInformation;
 
@@ -24,6 +25,12 @@ public class BooksSubCategory extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_books_sub_category);
+		
+		AdultButton = (Button) findViewById(R.id.adult);
+		FictionButton = (Button) findViewById(R.id.fiction);
+		ChildrenButton = (Button) findViewById(R.id.children);
+		TechonologyButton = (Button) findViewById(R.id.technology);
+		BackBookButton = (Button) findViewById(R.id.backbooks);
 		
 		View.OnClickListener handler1 = new View.OnClickListener() {
 			public void onClick(View v){
@@ -57,13 +64,21 @@ public class BooksSubCategory extends Activity {
 			}
 		};
 		
+		
 		View.OnClickListener handler5 = new View.OnClickListener() {
 			public void onClick(View v){
-				intent = new Intent(BooksSubCategory.this,ItemList.class);
+				intent = new Intent(BooksSubCategory.this,Categories.class);
 				startActivity(intent);
 				
 			}
 		};
+		
+		AdultButton.setOnClickListener(handler1);
+		FictionButton.setOnClickListener(handler2);
+		ChildrenButton.setOnClickListener(handler3);
+		TechonologyButton.setOnClickListener(handler4);
+		BackBookButton.setOnClickListener(handler5);
+		
 		
 		
 	}
