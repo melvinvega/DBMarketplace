@@ -19,5 +19,7 @@
     <string name="title_activity_create_account">CreateAccount</string>
     <string name="title_activity_user_cart">UserCart</string>
     <string name="title_activity_user_bids_info">UserBidsInfo</string>
+    <string name="title_activity_bid_ammount">BidAmmount</string>
+    <string name="EnterBidAmmount">Enter Bid Ammount</string>
 
 </resources>

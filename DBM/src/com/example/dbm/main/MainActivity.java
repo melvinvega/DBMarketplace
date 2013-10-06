@@ -1,8 +1,10 @@
 package com.example.dbm.main;
 
+import com.example.dbm.ItemList;
 import com.example.dbm.R;
 import com.example.dbm.user.CreateAccount;
 import com.example.dbm.user.LogInInformation;
+
 
 
 import android.os.Bundle;
@@ -18,6 +20,8 @@ public class MainActivity extends Activity {
 	Button LogInButton,CreateAccountButton, BackButton;
 	Intent intent;
 	ImageButton buyButton,sellButton,userButton;
+	
+	Button movebutton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,8 @@ public class MainActivity extends Activity {
 		CreateAccountButton  = (Button) findViewById(R.id.CreateAccountButton);
 		buyButton			 = (ImageButton) findViewById(R.id.BuyButton);
 		sellButton			 = (ImageButton) findViewById(R.id.SellButton);
+		
+
 		
 		View.OnClickListener handler1 = new View.OnClickListener() {
 			public void onClick(View v){
@@ -68,8 +74,6 @@ public class MainActivity extends Activity {
 		
 
 	}
-
-
 
 
 	@Override
