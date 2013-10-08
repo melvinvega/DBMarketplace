@@ -29,11 +29,13 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 	private ArrayList<Item> mParent;
 	Context context1;
 	Intent intent;
+	int key;
 
-	public ExpandableListAdapter(Context context, ArrayList<Item> parent){
+	public ExpandableListAdapter(Context context, ArrayList<Item> parent,int key){
 		mParent = parent;
 		inflater = LayoutInflater.from(context);
 		context1 = context;
+		key = key;
 	}
 
 	@Override
@@ -95,6 +97,24 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 
 		final String childText = (String) getChild(i, i1);	
 
+		switch (key) {
+		//ItemList
+		case 0:
+			
+			break;
+		//BidList	
+		case 1:
+			
+			break;
+		//Shopping
+		case 2:
+			
+			break;
+
+		default:
+			break;
+		}
+		
 		if(i1 == 6){
 			view = inflater.inflate(R.layout.list_item_last, null);
 

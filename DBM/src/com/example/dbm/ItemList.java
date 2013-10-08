@@ -43,7 +43,7 @@ public class ItemList extends Activity  implements ExpandableListView.OnGroupCli
 		arrayChildren.add("");
 
 		//sets the adapter that provides data to the list.
-		mExpandableList.setAdapter(new ExpandableListAdapter(this,arrayParents));
+		mExpandableList.setAdapter(new ExpandableListAdapter(this,arrayParents,0));
 		mExpandableList.setOnChildClickListener(this);
 	}
 
