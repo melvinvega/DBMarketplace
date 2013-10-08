@@ -16,41 +16,26 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
         android:ems="10"
-        android:text="AutoCompleteTextView" />
-
-    <Button
-        android:id="@+id/adult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/autoCompleteTextView1"
-        android:layout_centerHorizontal="true"
-        android:text="Adult" />
+        android:hint="Search" />
 
     <Button
         android:id="@+id/backbooks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/technology"
-        android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/technology"
+        android:layout_below="@+id/technology"
+        android:layout_marginTop="47dp"
         android:text="Back" />
-
-    <Button
-        android:id="@+id/technology"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/backbooks"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="39dp"
-        android:text="Technology" />
 
     <Button
         android:id="@+id/fiction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adult"
         android:layout_alignRight="@+id/adult"
         android:layout_below="@+id/adult"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="34dp"
         android:text="Fiction" />
 
     <Button
@@ -58,8 +43,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/fiction"
+        android:layout_alignRight="@+id/fiction"
         android:layout_below="@+id/fiction"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="37dp"
         android:text="Children" />
+
+    <Button
+        android:id="@+id/adult"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Adult" />
+
+    <Button
+        android:id="@+id/technology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/children"
+        android:layout_alignRight="@+id/children"
+        android:layout_below="@+id/children"
+        android:layout_marginTop="39dp"
+        android:text="Technology" />
 
 </RelativeLayout>

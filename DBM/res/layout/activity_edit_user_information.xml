@@ -35,16 +35,6 @@
     </EditText>
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_centerVertical="true"
-        android:ems="10"
-        android:text="La Esquina de Maya #150" />
-
-    <EditText
         android:id="@+id/editText4"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
@@ -65,16 +55,6 @@
         android:text="00680" />
 
     <Button
-        android:id="@+id/confirm2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText4"
-        android:layout_alignRight="@+id/editText4"
-        android:layout_below="@+id/editText4"
-        android:layout_marginTop="28dp"
-        android:text="Confirm" />
-
-    <Button
         android:id="@+id/cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,5 +63,25 @@
         android:layout_alignLeft="@+id/editText5"
         android:layout_alignRight="@+id/editText5"
         android:text="Cancel" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:text="La Esquina de Maya #150" />
+
+    <Button
+        android:id="@+id/confirm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:text="Confirm" />
 
 </RelativeLayout>
