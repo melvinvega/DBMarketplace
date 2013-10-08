@@ -14,11 +14,12 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.Button;
+import android.widget.ExpandableListView;
 import android.widget.Toast;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
-public class ExpandableListAdapter extends BaseExpandableListAdapter {
+public class ExpandableListAdapter extends BaseExpandableListAdapter implements ExpandableListView.OnGroupClickListener, ExpandableListView.OnChildClickListener {
 	private LayoutInflater inflater;
 	private ArrayList<Item> mParent;
 	Context context1;
@@ -88,9 +89,6 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
 		final String childText = (String) getChild(i, i1);	
 
-
-
-
 		if(i1 == 6){
 			view = inflater.inflate(R.layout.list_item_last, null);
 
@@ -116,5 +114,19 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter {
 	@Override
 	public boolean isChildSelectable(int i, int i1) {
 		return true;
+	}
+
+	@Override
+	public boolean onChildClick(ExpandableListView parent, View v,
+			int groupPosition, int childPosition, long id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean onGroupClick(ExpandableListView parent, View v,
+			int groupPosition, long id) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 }

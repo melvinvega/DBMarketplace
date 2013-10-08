@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="21dp"
         android:ems="10"
-        android:hint="Search" >
+        android:text="Search" >
 
         <requestFocus />
     </AutoCompleteTextView>
@@ -42,6 +42,16 @@
         android:text="Back" />
 
     <Button
+        android:id="@+id/menshoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoCompleteTextView1"
+        android:layout_alignRight="@+id/autoCompleteTextView1"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_marginTop="32dp"
+        android:text="Men" />
+
+    <Button
         android:id="@+id/womenshoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,15 +60,5 @@
         android:layout_below="@+id/menshoes"
         android:layout_marginTop="20dp"
         android:text="Women" />
-
-    <Button
-        android:id="@+id/menshoes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/autoCompleteTextView1"
-        android:layout_alignRight="@+id/autoCompleteTextView1"
-        android:layout_below="@+id/autoCompleteTextView1"
-        android:layout_marginTop="63dp"
-        android:text="Men" />
 
 </RelativeLayout>
