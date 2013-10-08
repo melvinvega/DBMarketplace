@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
         android:ems="10"
-        android:text="Search" />
+        android:hint="Search" />
 
     <Button
         android:id="@+id/phones"
@@ -39,16 +39,6 @@
         android:text="Videogames Consoles" />
 
     <Button
-        android:id="@+id/mp3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/autoCompleteTextView1"
-        android:layout_alignRight="@+id/autoCompleteTextView1"
-        android:layout_below="@+id/autoCompleteTextView1"
-        android:layout_marginTop="16dp"
-        android:text="Mp3 Players" />
-
-    <Button
         android:id="@+id/tablets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,5 +57,15 @@
         android:layout_below="@+id/videogames"
         android:layout_marginTop="22dp"
         android:text="Back" />
+
+    <Button
+        android:id="@+id/mp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoCompleteTextView1"
+        android:layout_alignRight="@+id/autoCompleteTextView1"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_marginTop="44dp"
+        android:text="Mp3 Players" />
 
 </RelativeLayout>

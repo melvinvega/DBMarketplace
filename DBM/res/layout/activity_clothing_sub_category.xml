@@ -8,45 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ClothingSubCategory" >
 
-    <Button
-        android:id="@+id/childrenclothe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/women"
-        android:layout_alignRight="@+id/women"
-        android:layout_below="@+id/women"
-        android:layout_marginTop="46dp"
-        android:text="Children" />
-
-    <Button
-        android:id="@+id/women"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/men"
-        android:layout_alignRight="@+id/men"
-        android:layout_below="@+id/men"
-        android:layout_marginTop="45dp"
-        android:text="Women" />
-
-    <Button
-        android:id="@+id/backclothe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/childrenclothe"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/childrenclothe"
-        android:layout_marginBottom="46dp"
-        android:text="Back" />
-
-    <Button
-        android:id="@+id/men"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
-        android:text="Men" />
-
     <AutoCompleteTextView
         android:id="@+id/autoCompleteTextView1"
         android:layout_width="wrap_content"
@@ -55,6 +16,45 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
         android:ems="10"
-        android:text="Search" />
+        android:hint="Search" />
+
+    <Button
+        android:id="@+id/men"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Men" />
+
+    <Button
+        android:id="@+id/women"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/men"
+        android:layout_alignRight="@+id/men"
+        android:layout_below="@+id/men"
+        android:layout_marginTop="52dp"
+        android:text="Women" />
+
+    <Button
+        android:id="@+id/childrenclothe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/women"
+        android:layout_alignRight="@+id/women"
+        android:layout_below="@+id/women"
+        android:layout_marginTop="42dp"
+        android:text="Children" />
+
+    <Button
+        android:id="@+id/backclothe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/childrenclothe"
+        android:layout_alignRight="@+id/childrenclothe"
+        android:layout_below="@+id/childrenclothe"
+        android:layout_marginTop="47dp"
+        android:text="Back" />
 
 </RelativeLayout>

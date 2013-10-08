@@ -16,7 +16,7 @@
         android:layout_alignBottom="@+id/editText6"
         android:layout_alignRight="@+id/editText5"
         android:ems="10"
-        android:text="Zip" />
+        android:hint="Zip" />
 
     <EditText
         android:id="@+id/editText1"
@@ -26,8 +26,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Username" />
+        android:hint="Username"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editText2"
@@ -37,8 +37,8 @@
         android:layout_below="@+id/editText1"
         android:layout_marginTop="44dp"
         android:ems="10"
-        android:inputType="textPassword"
-        android:text="Password" />
+        android:hint="Password"
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/editText3"
@@ -48,8 +48,8 @@
         android:layout_below="@+id/editText2"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Name"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editText4"
@@ -59,8 +59,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
         android:ems="10"
-        android:inputType="number"
-        android:text="Credit Card" />
+        android:hint="Credit Card"
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/editText5"
@@ -70,8 +70,8 @@
         android:layout_below="@+id/editText4"
         android:layout_marginTop="35dp"
         android:ems="10"
-        android:inputType="textPostalAddress"
-        android:text="Adress" />
+        android:hint="Adress"
+        android:inputType="textPostalAddress" />
 
     <EditText
         android:id="@+id/editText6"
@@ -81,8 +81,8 @@
         android:layout_below="@+id/editText5"
         android:layout_marginTop="38dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="State" />
+        android:hint="State"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/logout2"

@@ -16,17 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:ems="10"
-        android:text="Search" />
-
-    <Button
-        android:id="@+id/laptop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/desktop"
-        android:layout_alignRight="@+id/desktop"
-        android:layout_below="@+id/desktop"
-        android:layout_marginTop="34dp"
-        android:text="Laptop" />
+        android:hint="Search" />
 
     <Button
         android:id="@+id/backcomputers"
@@ -39,13 +29,23 @@
         android:text="Back" />
 
     <Button
+        android:id="@+id/laptop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/desktop"
+        android:layout_alignRight="@+id/desktop"
+        android:layout_below="@+id/desktop"
+        android:layout_marginTop="47dp"
+        android:text="Laptop" />
+
+    <Button
         android:id="@+id/desktop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/autoCompleteTextView1"
         android:layout_alignRight="@+id/autoCompleteTextView1"
         android:layout_below="@+id/autoCompleteTextView1"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="58dp"
         android:text="Desktop" />
 
 </RelativeLayout>

@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:ems="10"
-        android:text="Search" >
+        android:hint="Search" >
 
         <requestFocus />
     </AutoCompleteTextView>
@@ -42,16 +42,6 @@
         android:text="Tennis" />
 
     <Button
-        android:id="@+id/baseball"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/autoCompleteTextView1"
-        android:layout_alignRight="@+id/autoCompleteTextView1"
-        android:layout_below="@+id/autoCompleteTextView1"
-        android:layout_marginTop="14dp"
-        android:text="Baseball" />
-
-    <Button
         android:id="@+id/backsports"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,5 +60,15 @@
         android:layout_below="@+id/baseball"
         android:layout_marginTop="22dp"
         android:text="Basketball" />
+
+    <Button
+        android:id="@+id/baseball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoCompleteTextView1"
+        android:layout_alignRight="@+id/autoCompleteTextView1"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_marginTop="57dp"
+        android:text="Baseball" />
 
 </RelativeLayout>
