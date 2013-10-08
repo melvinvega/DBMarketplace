@@ -24,18 +24,18 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
 public class ExpandableListAdapter extends BaseExpandableListAdapter implements ExpandableListView.OnGroupClickListener, ExpandableListView.OnChildClickListener {
-	
+
 	private LayoutInflater inflater;
 	private ArrayList<Item> mParent;
 	Context context1;
 	Intent intent;
 	int key;
 
-	public ExpandableListAdapter(Context context, ArrayList<Item> parent,int key){
+	public ExpandableListAdapter(Context context, ArrayList<Item> parent,int inkey){
 		mParent = parent;
 		inflater = LayoutInflater.from(context);
 		context1 = context;
-		key = key;
+		key = inkey;
 	}
 
 	@Override
@@ -98,42 +98,50 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 		final String childText = (String) getChild(i, i1);	
 
 		switch (key) {
+
 		//ItemList
 		case 0:
-			
+			if(i1 == 6)
+			{
+				view = inflater.inflate(R.layout.list_item_last, null);
+
+				Button bid = (Button) view.findViewById(R.id.bid_item);
+				bid.setOnClickListener(new OnClickListener() {public void onClick(View v) {
+					v.getContext().startActivity(new Intent(context1,BidAmmount.class));
+				}});
+
+				Button buy = (Button) view.findViewById(R.id.buy_item);
+				buy.setOnClickListener(new OnClickListener() {public void onClick(View v) {
+					Toast.makeText(context1," Buy Pressed",Toast.LENGTH_SHORT).show();
+				}});
+			}
+
+			else {
+				view = inflater.inflate(R.layout.list_item, null);
+				TextView txtListChild = (TextView) view.findViewById(R.id.text_view_item);
+				txtListChild.setText(childText);
+			}
 			break;
-		//BidList	
+
+
+			//BidList	
 		case 1:
-			
+			view = inflater.inflate(R.layout.list_item, null);
+			TextView txtListChild = (TextView) view.findViewById(R.id.text_view_item);
+			txtListChild.setText(childText);
 			break;
-		//Shopping
+
+			//ShoppingCart
 		case 2:
-			
+			view = inflater.inflate(R.layout.list_item, null);
+			TextView txtListChild1 = (TextView) view.findViewById(R.id.text_view_item);
+			txtListChild1.setText(childText);
 			break;
 
 		default:
 			break;
 		}
-		
-		if(i1 == 6){
-			view = inflater.inflate(R.layout.list_item_last, null);
 
-			Button bid = (Button) view.findViewById(R.id.bid_item);
-			bid.setOnClickListener(new OnClickListener() {public void onClick(View v) {
-				v.getContext().startActivity(new Intent(context1,BidAmmount.class));
-			}});
-
-			Button buy = (Button) view.findViewById(R.id.buy_item);
-			buy.setOnClickListener(new OnClickListener() {public void onClick(View v) {
-				Toast.makeText(context1," Buy Pressed",Toast.LENGTH_SHORT).show();
-			}});
-		}
-
-		else {
-			view = inflater.inflate(R.layout.list_item, null);
-			TextView txtListChild = (TextView) view.findViewById(R.id.text_view_item);
-			txtListChild.setText(childText);
-		}
 		return view;
 	}
 
@@ -145,8 +153,8 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 	@Override
 	public boolean onChildClick(ExpandableListView parent, View v,
 			int groupPosition, int childPosition, long id) {
-		
-		
+
+
 		return false;
 	}
 

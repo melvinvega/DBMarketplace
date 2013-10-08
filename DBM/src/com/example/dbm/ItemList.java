@@ -20,7 +20,7 @@ public class ItemList extends Activity  implements ExpandableListView.OnGroupCli
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_item_list);
+		setContentView(R.layout.expandable_list);
 
 		mExpandableList = (ExpandableListView)findViewById(R.id.lvExp);
 
@@ -56,7 +56,7 @@ public class ItemList extends Activity  implements ExpandableListView.OnGroupCli
 	}
 	@Override
 	public boolean onGroupClick(ExpandableListView parent, View v,int groupPosition, long id) {
-		// TODO Auto-generated method stub
+	
 		return false;
 	}
 }
