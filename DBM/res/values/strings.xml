@@ -21,5 +21,7 @@
     <string name="title_activity_user_bids_info">UserBidsInfo</string>
     <string name="title_activity_bid_ammount">BidAmmount</string>
     <string name="EnterBidAmmount">Enter Bid Ammount</string>
+    <string name="title_activity_administrator">Administrator</string>
+    <string name="title_activity_sales">Sales</string>
 
 </resources>
