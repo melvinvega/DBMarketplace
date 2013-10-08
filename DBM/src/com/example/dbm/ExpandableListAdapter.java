@@ -3,9 +3,13 @@ package com.example.dbm;
 
 import java.util.ArrayList;
 
+import com.example.dbm.main.MainActivity;
+import com.example.dbm.user.LogInInformation;
+
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,9 +24,11 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
 public class ExpandableListAdapter extends BaseExpandableListAdapter implements ExpandableListView.OnGroupClickListener, ExpandableListView.OnChildClickListener {
+	
 	private LayoutInflater inflater;
 	private ArrayList<Item> mParent;
 	Context context1;
+	Intent intent;
 
 	public ExpandableListAdapter(Context context, ArrayList<Item> parent){
 		mParent = parent;
@@ -94,7 +100,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 
 			Button bid = (Button) view.findViewById(R.id.bid_item);
 			bid.setOnClickListener(new OnClickListener() {public void onClick(View v) {
-				Toast.makeText(context1," Bid Pressed",Toast.LENGTH_SHORT).show();
+				v.getContext().startActivity(new Intent(context1,BidAmmount.class));
 			}});
 
 			Button buy = (Button) view.findViewById(R.id.buy_item);
@@ -119,7 +125,8 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 	@Override
 	public boolean onChildClick(ExpandableListView parent, View v,
 			int groupPosition, int childPosition, long id) {
-		// TODO Auto-generated method stub
+		
+		
 		return false;
 	}
 
