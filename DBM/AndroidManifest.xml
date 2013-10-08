@@ -86,14 +86,29 @@
             android:name="com.example.dbm.BidAmmount"
             android:label="@string/title_activity_bid_ammount" >
         </activity>
-
         <activity
             android:name="com.example.dbm.main.Administrator"
             android:label="@string/title_activity_administrator" >
         </activity>
         <activity
-            android:name="com.example.dbm.main.Sales"
+            android:name="com.example.dbm.sales.Sales"
             android:label="@string/title_activity_sales" >
+        </activity>
+        <activity
+            android:name="com.example.dbm.sales.TotalSales"
+            android:label="@string/title_activity_total_sales" >
+        </activity>
+        <activity
+            android:name="com.example.dbm.sales.TotalSalesProductsoducts"
+            android:label="@string/title_activity_total_sales_products" >
+        </activity>
+        <activity
+            android:name="com.example.dbm.sales.TotalSalesRevenue"
+            android:label="@string/title_activity_total_sales_revenue" >
+        </activity>
+        <activity
+            android:name="com.example.dbm.sales.TotalSalesProduct"
+            android:label="@string/title_activity_total_sales_product" >
         </activity>
     </application>
 

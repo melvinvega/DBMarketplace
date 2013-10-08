@@ -3,6 +3,7 @@ package com.example.dbm.main;
 import com.example.dbm.R;
 import com.example.dbm.R.layout;
 import com.example.dbm.R.menu;
+import com.example.dbm.sales.Sales;
 import com.example.dbm.user.CreateAccount;
 import com.example.dbm.user.LogInInformation;
 

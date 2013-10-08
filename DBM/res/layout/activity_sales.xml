@@ -9,8 +9,51 @@
     tools:context=".Sales" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="Sales Information" />
+
+    <Button
+        android:id="@+id/totalsales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="59dp"
+        android:text="Total Sales" />
+
+    <Button
+        android:id="@+id/salesback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totalsalesrevenue"
+        android:layout_alignRight="@+id/totalsalesrevenue"
+        android:layout_below="@+id/totalsalesrevenue"
+        android:layout_marginTop="35dp"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/totalproducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totalsales"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/totalsales"
+        android:layout_marginTop="25dp"
+        android:text="Total Sales by Products" />
+
+    <Button
+        android:id="@+id/totalsalesrevenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totalproducts"
+        android:layout_alignRight="@+id/totalproducts"
+        android:layout_below="@+id/totalproducts"
+        android:layout_marginTop="48dp"
+        android:text="Total Sales by Revenue" />
 
 </RelativeLayout>

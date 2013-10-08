@@ -23,5 +23,9 @@
     <string name="EnterBidAmmount">Enter Bid Ammount</string>
     <string name="title_activity_administrator">Administrator</string>
     <string name="title_activity_sales">Sales</string>
+    <string name="title_activity_total_sales">TotalSales</string>
+    <string name="title_activity_total_sales_products">TotalSalesProducts</string>
+    <string name="title_activity_total_sales_revenue">TotalSalesRevenue</string>
+    <string name="title_activity_total_sales_product">TotalSalesProduct</string>
 
 </resources>
