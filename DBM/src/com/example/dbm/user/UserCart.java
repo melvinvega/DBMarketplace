@@ -40,21 +40,22 @@ public class UserCart extends Activity {
 				parent.setArrayChildren(totalCostArray);
 			}
 			else{
-			parent.setTitle("Item " + i);
-			parent.setArrayChildren(arrayChildren);
+				parent.setTitle("Item " + i);
+				parent.setArrayChildren(arrayChildren);
 			}
 			//in this array we add the Parent object. We will use the arrayParents at the setAdapter
 			arrayParents.add(parent);
 		}
-
+		arrayChildren.add("  ");
 		totalCostArray.add("Subtotal");
 		totalCostArray.add("Shipping");
 		totalCostArray.add("Total");
+		totalCostArray.add(".");
 		total.setTitle("Total");
 		total.setArrayChildren(arrayChildren);
-		
+
 		//sets the adapter that provides data to the list.
-		mExpandableList.setAdapter(new ExpandableListAdapter(this,arrayParents,1));
+		mExpandableList.setAdapter(new ExpandableListAdapter(this,arrayParents,2));
 
 	}
 

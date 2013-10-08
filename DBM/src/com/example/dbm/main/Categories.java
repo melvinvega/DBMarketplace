@@ -72,8 +72,7 @@ public class Categories extends Activity {
 		
 		View.OnClickListener handler2 = new View.OnClickListener() {
 			public void onClick(View v){
-				intent = new Intent(Categories.this,AfterLogIn.class);
-				startActivity(intent);
+				finish();
 			}
 		};
 		

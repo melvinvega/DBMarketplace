@@ -4,6 +4,7 @@ package com.example.dbm;
 import java.util.ArrayList;
 
 import com.example.dbm.main.MainActivity;
+import com.example.dbm.user.ItemHasBeenRemoved;
 import com.example.dbm.user.LogInInformation;
 
 
@@ -93,15 +94,15 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 
 	@Override
 	//in this method you must set the text to see the children on the list
-	public View getChildView(final int i, int i1, boolean b, View view, ViewGroup viewGroup) {
+	public View getChildView(final int parent_position, int child_position, boolean b, View view, ViewGroup viewGroup) {
 
-		final String childText = (String) getChild(i, i1);	
+		final String childText = (String) getChild(parent_position, child_position);	
 
 		switch (key) {
 
 		//ItemList
 		case 0:
-			if(i1 == 6)
+			if(child_position == 6)
 			{
 				view = inflater.inflate(R.layout.list_item_last, null);
 
@@ -112,7 +113,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 
 				Button buy = (Button) view.findViewById(R.id.buy_item);
 				buy.setOnClickListener(new OnClickListener() {public void onClick(View v) {
-					Toast.makeText(context1," Buy Pressed",Toast.LENGTH_SHORT).show();
+					Toast.makeText(context1,"Item added to cart",Toast.LENGTH_SHORT).show();
 				}});
 			}
 
@@ -133,9 +134,32 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 
 			//ShoppingCart
 		case 2:
-			view = inflater.inflate(R.layout.list_item, null);
-			TextView txtListChild1 = (TextView) view.findViewById(R.id.text_view_item);
-			txtListChild1.setText(childText);
+			
+			if(childText == ".")
+			{
+				view = inflater.inflate(R.layout.list_checkout, null);
+				Button checkout = (Button) view.findViewById(R.id.checkout);
+				checkout.setOnClickListener(new OnClickListener() {public void onClick(View v) {
+					Toast.makeText(context1,"Payment has been Processed",Toast.LENGTH_SHORT).show();
+				
+				}});
+			}
+/*
+			if(childText == " " )
+			{
+				view = inflater.inflate(R.layout.list_remove_cart, null);
+				Button remove = (Button) view.findViewById(R.id.remove_from_cart);
+				remove.setOnClickListener(new OnClickListener() {public void onClick(View v) {
+					v.getContext().startActivity(new Intent(context1,ItemHasBeenRemoved.class));
+				
+				}});
+			}
+			*/
+			else {
+				view = inflater.inflate(R.layout.list_item, null);
+				TextView txtListChild1 = (TextView) view.findViewById(R.id.text_view_item);
+				txtListChild1.setText(childText);
+			}
 			break;
 
 		default:
