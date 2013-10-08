@@ -1,6 +1,7 @@
 package com.example.dbm.user;
 
 import com.example.dbm.R;
+import com.example.dbm.main.Administrator;
 import com.example.dbm.main.AfterLogIn;
 import com.example.dbm.main.MainActivity;
 
@@ -13,7 +14,7 @@ import android.widget.Button;
 
 public class LogInInformation extends Activity {
 
-	Button LogInButton;
+	Button LogInButton, Admi;
 	Intent intent;
 	
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class LogInInformation extends Activity {
 		setContentView(R.layout.activity_log_in_information);
 		
 		LogInButton = (Button) findViewById(R.id.logConfirm);
+		Admi = (Button) findViewById(R.id.admilog);
 		
 		
 		View.OnClickListener handler = new View.OnClickListener() {
@@ -31,7 +33,16 @@ public class LogInInformation extends Activity {
 			}
 		};
 		
+		View.OnClickListener handler2 = new View.OnClickListener() {
+			public void onClick(View v){
+				intent = new Intent(LogInInformation.this,Administrator.class);
+				startActivity(intent);
+				
+			}
+		};
+		
 		LogInButton.setOnClickListener(handler);
+		Admi.setOnClickListener(handler2);
 	}
 
 	@Override

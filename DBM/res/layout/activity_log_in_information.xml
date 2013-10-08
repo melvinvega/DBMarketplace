@@ -11,8 +11,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="185dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Username" />
+        android:hint="Username"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/Password"
@@ -22,8 +22,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="29dp"
         android:ems="10"
-        android:inputType="textPassword"
-        android:text="Password" />
+        android:hint="Password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/logConfirm"
@@ -43,5 +43,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp"
         android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/admilog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/logConfirm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/logConfirm"
+        android:text="Administrator" />
 
 </RelativeLayout>
