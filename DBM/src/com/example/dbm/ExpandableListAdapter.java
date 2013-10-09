@@ -134,7 +134,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 
 			//ShoppingCart
 		case 2:
-			
+		/*	
 			if(childText == ".")
 			{
 				view = inflater.inflate(R.layout.list_checkout, null);
@@ -144,7 +144,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 				
 				}});
 			}
-/*
+*/
 			if(childText == " " )
 			{
 				view = inflater.inflate(R.layout.list_remove_cart, null);
@@ -154,7 +154,7 @@ public class ExpandableListAdapter extends BaseExpandableListAdapter implements 
 				
 				}});
 			}
-			*/
+			
 			else {
 				view = inflater.inflate(R.layout.list_item, null);
 				TextView txtListChild1 = (TextView) view.findViewById(R.id.text_view_item);

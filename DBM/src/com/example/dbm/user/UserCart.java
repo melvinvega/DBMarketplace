@@ -46,11 +46,11 @@ public class UserCart extends Activity {
 			//in this array we add the Parent object. We will use the arrayParents at the setAdapter
 			arrayParents.add(parent);
 		}
-		arrayChildren.add("  ");
+		arrayChildren.add(" ");
 		totalCostArray.add("Subtotal");
 		totalCostArray.add("Shipping");
 		totalCostArray.add("Total");
-		totalCostArray.add(".");
+		totalCostArray.add(" ");
 		total.setTitle("Total");
 		total.setArrayChildren(arrayChildren);
 
